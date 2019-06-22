@@ -45,22 +45,22 @@ function Grid() {
             </div>
             <div className="row">
                 <div className="col-2">
-
+                    13
                 </div>
                 <div className="col-2">
-
+                    14
                 </div>
                 <div className="col-2">
-
+                    15
                 </div>
                 <div className="col-2">
-
+                    16
                 </div>
                 <div className="col-2">
-
+                    17
                 </div>
                 <div className="col-2">
-
+                    18
                 </div>
             </div>
             <div className="row">
