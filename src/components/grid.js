@@ -4,122 +4,122 @@ function Grid() {
     return(
         <div className="container">
             <div className="row">
-                <div className="col-2" id="1">
+                <div className="col-2 clickBox" id="1">
                     1
                 </div>
-                <div className="col-2" id="2">
+                <div className="col-2 clickBox" id="2">
                     2
                 </div>
-                <div className="col-2" id="3">
+                <div className="col-2 clickBox" id="3">
                     3
                 </div>
-                <div className="col-2" id="4">
+                <div className="col-2 clickBox" id="4">
                     4
                 </div>
-                <div className="col-2" id="5">
+                <div className="col-2 clickBox" id="5">
                     5
                 </div>
-                <div className="col-2" id="6">
+                <div className="col-2 clickBox" id="6">
                     6
                 </div>
             </div>
             <div className="row">
-                <div className="col-2" id="7">
+                <div className="col-2 clickBox" id="7">
                     7
                 </div>
-                <div className="col-2" id="8">
+                <div className="col-2 clickBox" id="8">
                     8
                 </div>
-                <div className="col-2" id="9">
+                <div className="col-2 clickBox" id="9">
                     9
                 </div>
-                <div className="col-2" id="10">
+                <div className="col-2 clickBox" id="10">
                     10
                 </div>
-                <div className="col-2" id="11">
+                <div className="col-2 clickBox" id="11">
                     11
                 </div>
-                <div className="col-2" id="12">
+                <div className="col-2 clickBox" id="12">
                     12
                 </div>
             </div>
             <div className="row">
-                <div className="col-2" id="13">
+                <div className="col-2 clickBox" id="13">
                     13
                 </div>
-                <div className="col-2" id="14">
+                <div className="col-2 clickBox" id="14">
                     14
                 </div>
-                <div className="col-2" id="15">
+                <div className="col-2 clickBox" id="15">
                     15
                 </div>
-                <div className="col-2" id="16">
+                <div className="col-2 clickBox" id="16">
                     16
                 </div>
-                <div className="col-2" id="17">
+                <div className="col-2 clickBox" id="17">
                     17
                 </div>
-                <div className="col-2" id="18">
+                <div className="col-2 clickBox" id="18">
                     18
                 </div>
             </div>
             <div className="row">
-                <div className="col-2" id="19">
+                <div className="col-2 clickBox" id="19">
                     19
                 </div>
-                <div className="col-2" id="20">
+                <div className="col-2 clickBox" id="20">
                     20
                 </div>
-                <div className="col-2" id="21">
+                <div className="col-2 clickBox" id="21">
                     21
                 </div>
-                <div className="col-2" id="22">
+                <div className="col-2 clickBox" id="22">
                     22
                 </div>
-                <div className="col-2" id="23">
+                <div className="col-2 clickBox" id="23">
                     23
                 </div>
-                <div className="col-2" id="24">
+                <div className="col-2 clickBox" id="24">
                     24
                 </div>
             </div>
             <div className="row">
-                <div className="col-2" id="25">
+                <div className="col-2 clickBox" id="25">
                     25
                 </div>
-                <div className="col-2" id="26">
+                <div className="col-2 clickBox" id="26">
                     26
                 </div>
-                <div className="col-2" id="27">
+                <div className="col-2 clickBox" id="27">
                     27
                 </div>
-                <div className="col-2" id="28">
+                <div className="col-2 clickBox" id="28">
                     28
                 </div>
-                <div className="col-2" id="29">
+                <div className="col-2 clickBox" id="29">
                     29
                 </div>
-                <div className="col-2" id="30">
+                <div className="col-2 clickBox" id="30">
                     30
                 </div>
             </div>
             <div className="row">
-                <div className="col-2" id="31">
+                <div className="col-2 clickBox" id="31">
                     31
                 </div>
-                <div className="col-2" id="32">
+                <div className="col-2 clickBox" id="32">
                     32
                 </div>
-                <div className="col-2" id="33">
+                <div className="col-2 clickBox" id="33">
                     33
                 </div>
-                <div className="col-2" id="34">
+                <div className="col-2 clickBox" id="34">
                     34
                 </div>
-                <div className="col-2" id="35">
+                <div className="col-2 clickBox" id="35">
                     35
                 </div>
-                <div className="col-2" id="36">
+                <div className="col-2 clickBox" id="36">
                     36
                 </div>
             </div>
