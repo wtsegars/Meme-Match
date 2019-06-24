@@ -25,10 +25,40 @@ $(document).ready(function() {
     const wallmartBoy = "images/wallmartboy.png";
 
     const memeArray = [almostPcRedneck, bigChungus, bolbi, changeMyMind, doggo, foreverAlone, meNTheBoys, notSureIfFry, pepe, sarcasticWonka, scumbagSteve, triggeredFem, trollFace, bbqBecky, benDestroysLib, distractedBoyfriend, earthChan, iDontFeelSoGood, inhaleSeagull, mockingSpongebob, savagePatrick, trumpetBoy, ugandanKnuckles, wallmartBoy];
+    let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+    let score = 0;
 
     for (let i = 0; i < memeArray.length; i++){
-        for (let j = 0; j < 36; j++){
-            
+        for (let j = 1; j < 24; j++){
+            $('#' + [j] + '').append('<img src="' + memeArray[i].val() + '" alt="" />');
         }
     }
+
+    $(document).on('click', '<img/>', function() {
+        for (let i = 0; i < 24; i++){
+            if (count.indexOf(i) === memeArray.indexOf(i)) {
+                if (count[i] === 0) {
+                    count[i]++;
+                    score++;
+
+                    for (let i = 1; i < 24; i++){
+                        $('#' + [i] + '').empty();
+
+                        $('#' + [i] + '').append('<img src="' + memeArray[Math.floor((Math.random() * 25) + 1)] + '" alt=" />');
+
+                        if ($('#' + [i] + '').children() === $('#' + [i - (i - 1)] + '').children()){
+                            
+                        }
+                    }
+                }
+                else if (count[i] === 1) {
+                    for (let i = 0; i < count.length; i++){
+                        count[i] = 0;
+                    }
+                    score = 0;
+                }
+            }
+        }
+    })
 })
