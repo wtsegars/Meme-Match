@@ -48,7 +48,7 @@ $(document).ready(function() {
                         $('#' + [i] + '').append('<img src="' + memeArray[Math.floor((Math.random() * 25) + 1)] + '" alt=" />');
 
                         if ($('#' + [i] + '').children() === $('#' + [i - (i - 1)] + '').children()){
-                            
+                            $('#' + [i] + '').append('<img src="' + memeArray[Math.floor(Math.random() * 25) + 1]) !== $('#')
                         }
                     }
                 }
