@@ -1,38 +1,54 @@
 import React, { Component } from 'react';
-import Header from 'header';
-import Grid from 'grid';
-import memeArray from 'memearray';
-import Score from 'score';
+import Header from './components/header';
+import Grid from './components/grid';
+import memeArray from './components/memearray';
+import Score from './components/score';
 
 class App extends Component {
 
-  state= {
-    memeArray,
+  state = {
+    memeArray: memeArray,
     score: 0
   }
 
-  shuffleArray = () =>{
-    let beenClicked = this.state.beenClicked;
-    let score = this.state.score;
+  shuffleArray = event => {
+    //let score = this.state.score;
+    const clicked = event.target.dataset.clicked;
+    const img = event.target.dataset.img;
+
+    let beenclicked;
+    if (clicked === "false") {
+      beenclicked = false;
+    }
+    else {
+      beenclicked = true;
+    }
     const shuffle = require('shuffle-array');
 
+    let memeArray = this.state.memeArray;
     shuffle(memeArray);
+    this.setState({ memeArray: memeArray });
 
-    if(beenClicked === false) {
-      beenClicked = true
+    if (beenclicked === false) {
+      console.log("increment")
+      beenclicked = true
 
-      function increment(){
-        score += 1;
-      };
-      increment();
-    }
-    else if(beenClicked === true) {
-      function reset(){
-        score = 0;
+      for (let i = 0; i < this.state.memeArray.length; i++) {
+        if (memeArray[i].img === img) {
+          memeArray[i].clicked = true;
+        }
       }
-      reset();
 
-      memeArray.beenClicked = false;
+      let newScore = this.state.score + 1;
+      this.setState({ score: newScore });
+    }
+    else if (beenclicked === true) {
+      console.log("dont increment")
+      this.setState({ score: 0 });
+
+      for(let i = 0; i < this.state.memeArray.length; i++) {
+        memeArray[i].clicked = false;
+      }
     }
   }
 
@@ -40,12 +56,17 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Score />
-        <Grid />
+        <Score
+          score={this.state.score}
+        />
+        <Grid
+          shuffleArray={this.shuffleArray}
+          memeArray={this.state.memeArray}
+        />
       </div>
     );
   }
-  
+
 }
 
 export default App;

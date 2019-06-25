@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     for (let i = 0; i < memeArray.length; i++){
         for (let j = 1; j < 24; j++){
-            $('#' + [j] + '').append('<img src="' + memeArray[i].val() + '" alt="" />');
+            $('#' + [j] + '').append('<img src="' + memeArray[i].valueOf() + '" alt="" />');
         }
     }
 
