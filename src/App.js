@@ -50,6 +50,13 @@ class App extends Component {
         memeArray[i].clicked = false;
       }
     }
+    else if (this.state.score === 0) {
+      alert("Congradulations you win!");
+      alert("You should totally try again!");
+
+      shuffle(memeArray);
+      this.setState({ score: 0 });
+    }
   }
 
   render() {
